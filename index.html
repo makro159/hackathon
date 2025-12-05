@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeepSeek AI Assistant | Хакатон Проект</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Боковая панель -->
+        <aside class="sidebar">
+            <div class="logo">
+                <div class="logo-icon">🤖</div>
+                <h1>DeepSeek AI</h1>
+                <span class="badge">HACKATHON PRO</span>
+            </div>
+            
+            <div class="new-chat-btn" id="newChat">
+                <i class="fas fa-plus"></i> Новый диалог
+            </div>
+            
+            <div class="history-section">
+                <h3>История диалогов</h3>
+                <div class="history-list" id="historyList">
+                    <!-- История будет загружена здесь -->
+                </div>
+            </div>
+            
+            <div class="features">
+                <h3>Возможности</h3>
+                <ul>
+                    <li><i class="fas fa-code"></i> Написание кода</li>
+                    <li><i class="fas fa-brain"></i> Анализ данных</li>
+                    <li><i class="fas fa-file-alt"></i> Контент-стратегия</li>
+                    <li><i class="fas fa-lightbulb"></i> Креативные идеи</li>
+                    <li><i class="fas fa-chart-line"></i> Бизнес-аналитика</li>
+                </ul>
+            </div>
+            
+            <div class="api-status">
+                <div class="status-indicator active"></div>
+                <span>API активен</span>
+            </div>
+        </aside>
+
+        <!-- Основная область чата -->
+        <main class="chat-area">
+            <!-- Верхняя панель -->
+            <header class="chat-header">
+                <div class="header-left">
+                    <h2 id="chatTitle">Новый диалог</h2>
+                    <div class="model-info">
+                        <span class="model-tag">DeepSeek-R1</span>
+                        <span class="context-tag">128K контекст</span>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <button class="icon-btn" id="themeToggle" title="Сменить тему">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="icon-btn" id="exportBtn" title="Экспортировать диалог">
+                        <i class="fas fa-download"></i>
+                    </button>
+                    <button class="icon-btn" id="settingsBtn" title="Настройки">
+                        <i class="fas fa-cog"></i>
+                    </button>
+                </div>
+            </header>
+
+            <!-- Область сообщений -->
+            <div class="messages-container" id="messagesContainer">
+                <!-- Приветственное сообщение -->
+                <div class="message welcome-message">
+                    <div class="message-avatar">
+                        <div class="avatar">🤖</div>
+                    </div>
+                    <div class="message-content">
+                        <h3>Добро пожаловать в DeepSeek AI Assistant!</h3>
+                        <p>Я готов помочь вам с:</p>
+                        <div class="capabilities-grid">
+                            <div class="capability">
+                                <i class="fas fa-code"></i>
+                                <span>Написание и отладка кода</span>
+                            </div>
+                            <div class="capability">
+                                <i class="fas fa-lightbulb"></i>
+                                <span>Генерация идей для проектов</span>
+                            </div>
+                            <div class="capability">
+                                <i class="fas fa-chart-bar"></i>
+                                <span>Анализ данных и визуализация</span>
+                            </div>
+                            <div class="capability">
+                                <i class="fas fa-file-alt"></i>
+                                <span>Создание технической документации</span>
+                            </div>
+                        </div>
+                        <div class="quick-prompts">
+                            <p>Попробуйте спросить:</p>
+                            <div class="prompt-buttons">
+                                <button class="prompt-btn" data-prompt="Напиши код для красивой анимации на CSS">CSS анимация</button>
+                                <button class="prompt-btn" data-prompt="Создай структуру проекта для веб-приложения">Структура проекта</button>
+                                <button class="prompt-btn" data-prompt="Придумай идею для хакатона">Идея для хакатона</button>
+                                <button class="prompt-btn" data-prompt="Объясни концепцию машинного обучения">Про ML</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Панель ввода -->
+            <div class="input-area">
+                <div class="input-tools">
+                    <button class="tool-btn" id="attachBtn" title="Прикрепить файл">
+                        <i class="fas fa-paperclip"></i>
+                    </button>
+                    <button class="tool-btn" id="voiceBtn" title="Голосовой ввод">
+                        <i class="fas fa-microphone"></i>
+                    </button>
+                    <button class="tool-btn" id="formatBtn" title="Форматирование">
+                        <i class="fas fa-bold"></i>
+                    </button>
+                </div>
+                
+                <div class="input-wrapper">
+                    <textarea 
+                        id="messageInput" 
+                        placeholder="Напишите сообщение... (Shift+Enter для новой строки, Enter для отправки)"
+                        rows="1"
+                        autofocus
+                    ></textarea>
+                    
+                    <div class="input-actions">
+                        <button class="action-btn" id="stopBtn" title="Остановить генерацию">
+                            <i class="fas fa-stop"></i>
+                        </button>
+                        <button class="send-btn" id="sendBtn">
+                            <i class="fas fa-paper-plane"></i>
+                            <span>Отправить</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="input-footer">
+                    <span class="disclaimer">
+                        <i class="fas fa-info-circle"></i>
+                        ИИ может допускать ошибки. Проверяйте важную информацию.
+                    </span>
+                    <div class="char-count">
+                        <span id="charCount">0</span>/4000
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Боковая панель информации -->
+        <aside class="info-sidebar">
+            <div class="info-header">
+                <h3>Информация о сессии</h3>
+                <button class="close-info" id="closeInfo">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <div class="info-content">
+                <div class="info-section">
+                    <h4>Статистика диалога</h4>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <span class="stat-label">Сообщения</span>
+                            <span class="stat-value" id="messageCount">0</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Токены</span>
+                            <span class="stat-value" id="tokenCount">0</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Время</span>
+                            <span class="stat-value" id="chatTime">0м</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="info-section">
+                    <h4>Контекст модели</h4>
+                    <div class="context-info">
+                        <p>Модель: <strong>DeepSeek-R1</strong></p>
+                        <p>Контекст: <strong>128,000 токенов</strong></p>
+                        <p>Обновлено: <strong>Январь 2024</strong></p>
+                    </div>
+                    <div class="context-bar">
+                        <div class="context-fill" id="contextBar"></div>
+                    </div>
+                    <span class="context-text">Использовано: <span id="contextUsed">0%</span></span>
+                </div>
+                
+                <div class="info-section">
+                    <h4>API Конфигурация</h4>
+                    <div class="api-config">
+                        <div class="config-item">
+                            <label for="apiEndpoint">Endpoint:</label>
+                            <select id="apiEndpoint">
+                                <option value="https://api.deepseek.com">DeepSeek Official</option>
+                                <option value="https://api.deepseek.ai">DeepSeek AI</option>
+                                <option value="custom">Custom</option>
+                            </select>
+                        </div>
+                        <div class="config-item">
+                            <label for="temperature">Температура:</label>
+                            <input type="range" id="temperature" min="0" max="1" step="0.1" value="0.7">
+                            <span id="tempValue">0.7</span>
+                        </div>
+                        <div class="config-item">
+                            <label for="maxTokens">Макс. токенов:</label>
+                            <input type="range" id="maxTokens" min="100" max="4000" step="100" value="2000">
+                            <span id="tokensValue">2000</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="info-section">
+                    <h4>Примеры промптов</h4>
+                    <div class="example-prompts">
+                        <button class="example-btn" data-prompt="Напиши оптимизированный алгоритм сортировки на Python">
+                            Алгоритмы
+                        </button>
+                        <button class="example-btn" data-prompt="Создай SQL-запрос для анализа продаж">
+                            SQL Запросы
+                        </button>
+                        <button class="example-btn" data-prompt="Сгенерируй React компонент с TypeScript">
+                            React + TS
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Модальное окно настроек -->
+    <div class="modal" id="settingsModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Настройки API</h3>
+                <button class="modal-close" id="closeSettings">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="apiKey">API Key</label>
+                    <div class="input-with-action">
+                        <input type="password" id="apiKey" placeholder="Введите ваш API ключ">
+                        <button class="toggle-visibility" id="toggleKeyVisibility">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                    <p class="help-text">
+                        Получите ключ на 
+                        <a href="https://platform.deepseek.com/api_keys" target="_blank">platform.deepseek.com</a>
+                    </p>
+                </div>
+                
+                <div class="form-group">
+                    <label for="modelSelect">Модель</label>
+                    <select id="modelSelect">
+                        <option value="deepseek-chat">DeepSeek Chat (Рекомендуется)</option>
+                        <option value="deepseek-coder">DeepSeek Coder</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="saveHistory" checked>
+                        Сохранять историю диалогов
+                    </label>
+                </div>
+                
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="streamResponses" checked>
+                        Потоковые ответы (Streaming)
+                    </label>
+                </div>
+                
+                <div class="form-actions">
+                    <button class="btn-secondary" id="testApiBtn">Проверить подключение</button>
+                    <button class="btn-primary" id="saveSettingsBtn">Сохранить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Скрипты -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/marked.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

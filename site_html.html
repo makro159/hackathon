@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONAY UNIBASE - Сравнение университетов Казахстана</title>
+    <link rel="stylesheet" href="site_css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div>
+                    <h1>ONAY UNIBASE</h1>
+                    <p class="tagline">База данных университетов Казахстана. Сравнивайте, анализируйте, выбирайте.</p>
+                </div>
+                <div class="logo">
+                    <i class="fas fa-database"></i>
+                    <div>
+                        <strong>ONAY UNIBASE</strong>
+                        <div style="font-size: 12px;">Казахстан</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <!-- Панель навигации -->
+        <div class="nav-tabs">
+            <div class="nav-tab active" data-page="page1">
+                <i class="fas fa-balance-scale"></i> Сравнение университетов
+            </div>
+            <div class="nav-tab" data-page="page2">
+                <i class="fas fa-info-circle"></i> Детальная информация
+            </div>
+        </div>
+        
+        <!-- Страница 1: Сравнение университетов -->
+        <div id="page1" class="page active">
+            <div class="content-wrapper">
+                <section class="catalog-section">
+                    <h2 class="section-title"><i class="fas fa-university"></i> Каталог университетов (13 вузов)</h2>
+                    
+                    <!-- Поиск в каталоге -->
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" id="search-input" placeholder="Поиск университетов...">
+                    </div>
+                    
+                    <!-- Карточки университетов будут добавлены через JavaScript -->
+                    <div id="universities-container"></div>
+                </section>
+                
+                <section class="comparison-section">
+                    <h2 class="section-title"><i class="fas fa-balance-scale"></i> Панель сравнения</h2>
+                    
+                    <div id="comparison-content">
+                        <table class="comparison-table" id="comparison-table">
+                            <thead>
+                                <tr>
+                                    <th>Параметры</th>
+                                    <th id="uni1-header">Университет 1</th>
+                                    <th id="uni2-header">Университет 2</th>
+                                </tr>
+                            </thead>
+                            <tbody id="comparison-body">
+                                <!-- Данные будут добавлены через JavaScript -->
+                            </tbody>
+                        </table>
+                        
+                        <div id="empty-comparison" class="empty-comparison">
+                            <i class="fas fa-balance-scale"></i>
+                            <h3>Нет университетов для сравнения</h3>
+                            <p>Добавьте университеты из каталога для сравнения статистических данных</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        
+        <!-- Страница 2: Детальная информация -->
+        <div id="page2" class="page">
+            <div class="university-selector">
+                <!-- Кнопки выбора университетов будут добавлены через JavaScript -->
+            </div>
+            
+            <!-- Поиск на второй странице -->
+            <div class="search-box detail-search">
+                <i class="fas fa-search"></i>
+                <input type="text" id="detail-search-input" placeholder="Поиск по детальной информации...">
+            </div>
+            
+            <!-- Контейнер для детальной информации -->
+            <div id="detail-container">
+                <!-- Детальная информация будет добавлена через JavaScript -->
+            </div>
+        </div>
+        
+        <footer>
+            <p>© 2023 ONAY UNIBASE | База данных 13 ведущих университетов Казахстана | Данные актуальны на 2023 год</p>
+            <p style="margin-top: 10px; font-size: 13px; color: #888;">Информация носит ознакомительный характер. Для точных данных обратитесь к официальным источникам университетов.</p>
+        </footer>
+    </div>
+    
+    <script src="site_js.js"></script>
+</body>
+</html>

@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сравнение университетов Казахстана</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f9fc;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #0032a0 0%, #0069d9 100%);
+            color: white;
+            padding: 25px 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 0 0 12px 12px;
+            margin-bottom: 30px;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .logo i {
+            font-size: 32px;
+            color: #ffcc00;
+        }
+        
+        .tagline {
+            font-size: 16px;
+            opacity: 0.9;
+            margin-top: 5px;
+        }
+        
+        .content-wrapper {
+            display: flex;
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+        
+        .catalog-section {
+            flex: 1;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+            padding: 25px;
+            max-height: 850px;
+            overflow-y: auto;
+        }
+        
+        .comparison-section {
+            flex: 1.2;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+            padding: 25px;
+        }
+        
+        .section-title {
+            font-size: 22px;
+            color: #0032a0;
+            margin-bottom: 20px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid #eef2f7;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .section-title i {
+            color: #0069d9;
+        }
+        
+        .university-card {
+            background: #f8fafd;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-left: 4px solid #0069d9;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .university-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .university-card.selected {
+            border-left-color: #ffcc00;
+            background-color: #fff9e6;
+        }
+        
+        .university-name {
+            font-size: 20px;
+            font-weight: 700;
+            color: #0032a0;
+            margin-bottom: 8px;
+        }
+        
+        .university-stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-top: 15px;
+        }
+        
+        .stat-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px dashed #e0e6ef;
+        }
+        
+        .stat-label {
+            color: #666;
+            font-weight: 500;
+        }
+        
+        .stat-value {
+            font-weight: 600;
+            color: #0032a0;
+        }
+        
+        .add-to-compare {
+            background: #0069d9;
+            color: white;
+            border: none;
+            padding: 10px 18px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            margin-top: 15px;
+            transition: background 0.3s;
+            width: 100%;
+        }
+        
+        .add-to-compare:hover {
+            background: #0050b3;
+        }
+        
+        .add-to-compare.added {
+            background: #28a745;
+        }
+        
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        
+        .comparison-table th {
+            background-color: #f1f7fd;
+            padding: 15px;
+            text-align: left;
+            color: #0032a0;
+            font-weight: 700;
+            border-bottom: 2px solid #e0e6ef;
+        }
+        
+        .comparison-table td {
+            padding: 15px;
+            border-bottom: 1px solid #eef2f7;
+        }
+        
+        .comparison-table tr:nth-child(even) {
+            background-color: #f9fbfe;
+        }
+        
+        .comparison-university {
+            text-align: center;
+            font-weight: 700;
+            color: #0032a0;
+            font-size: 18px;
+        }
+        
+        .remove-btn {
+            background: #dc3545;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background 0.3s;
+            width: 100%;
+        }
+        
+        .remove-btn:hover {
+            background: #c82333;
+        }
+        
+        .empty-comparison {
+            text-align: center;
+            padding: 40px 20px;
+            color: #666;
+        }
+        
+        .empty-comparison i {
+            font-size: 48px;
+            margin-bottom: 15px;
+            color: #ccc;
+        }
+        
+        .stats-highlight {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+            flex-wrap: wrap;
+        }
+        
+        .highlight-item {
+            background: #eef7ff;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #0069d9;
+            margin-bottom: 8px;
+        }
+        
+        .qs-ranking {
+            background: linear-gradient(135deg, #5a189a, #9d4edd);
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 14px;
+            display: inline-block;
+            margin-top: 5px;
+        }
+        
+        .university-image {
+            height: 120px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        
+        .knu-image {
+            background-image: linear-gradient(rgba(0, 50, 160, 0.1), rgba(0, 50, 160, 0.1)), url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80');
+        }
+        
+        .satbayev-image {
+            background-image: linear-gradient(rgba(0, 50, 160, 0.1), rgba(0, 50, 160, 0.1)), url('https://images.unsplash.com/photo-1541339907198-e08756dedf3f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80');
+        }
+        
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: #666;
+            border-top: 1px solid #e0e6ef;
+            margin-top: 40px;
+            font-size: 14px;
+        }
+        
+        @media (max-width: 1024px) {
+            .content-wrapper {
+                flex-direction: column;
+            }
+            
+            .catalog-section, .comparison-section {
+                width: 100%;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .university-stats {
+                grid-template-columns: 1fr;
+            }
+            
+            .stats-highlight {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div>
+                    <h1>Сравнение университетов Казахстана</h1>
+                    <p class="tagline">Сравнивайте статистические данные ведущих вузов страны</p>
+                </div>
+                <div class="logo">
+                    <i class="fas fa-graduation-cap"></i>
+                    <div>
+                        <strong>EduCompare</strong>
+                        <div style="font-size: 12px;">Казахстан</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="content-wrapper">
+            <section class="catalog-section">
+                <h2 class="section-title"><i class="fas fa-university"></i> Каталог университетов</h2>
+                
+                <div class="university-card" id="knu-card">
+                    <div class="university-image knu-image"></div>
+                    <h3 class="university-name">Казахский национальный университет имени аль-Фараби</h3>
+                    <div class="qs-ranking">QS Asia Ranking: 44</div>
+                    
+                    <div class="university-stats">
+                        <div class="stat-item">
+                            <span class="stat-label">Абитуриенты в год:</span>
+                            <span class="stat-value">8,500</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Гранты:</span>
+                            <span class="stat-value">1,250</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Стоимость обучения:</span>
+                            <span class="stat-value">1.8 млн ₸</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Факультеты:</span>
+                            <span class="stat-value">16</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Студентов в потоке:</span>
+                            <span class="stat-value">350</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Площадь общежития:</span>
+                            <span class="stat-value">45,000 м²</span>
+                        </div>
+                    </div>
+                    
+                    <button class="add-to-compare" onclick="addToComparison('knu')">Добавить к сравнению</button>
+                </div>
+                
+                <div class="university-card" id="satbayev-card">
+                    <div class="university-image satbayev-image"></div>
+                    <h3 class="university-name">Satbayev University</h3>
+                    <div class="qs-ranking">QS Asia Ranking: 251-260</div>
+                    
+                    <div class="university-stats">
+                        <div class="stat-item">
+                            <span class="stat-label">Абитуриенты в год:</span>
+                            <span class="stat-value">4,200</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Гранты:</span>
+                            <span class="stat-value">850</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Стоимость обучения:</span>
+                            <span class="stat-value">2.1 млн ₸</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Факультеты:</span>
+                            <span class="stat-value">9</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Студентов в потоке:</span>
+                            <span class="stat-value">220</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Площадь общежития:</span>
+                            <span class="stat-value">28,500 м²</span>
+                        </div>
+                    </div>
+                    
+                    <button class="add-to-compare" onclick="addToComparison('satbayev')">Добавить к сравнению</button>
+                </div>
+            </section>
+            
+            <section class="comparison-section">
+                <h2 class="section-title"><i class="fas fa-balance-scale"></i> Панель сравнения</h2>
+                
+                <div id="comparison-content">
+                    <table class="comparison-table" id="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>Параметры</th>
+                                <th id="uni1-header">Университет 1</th>
+                                <th id="uni2-header">Университет 2</th>
+                            </tr>
+                        </thead>
+                        <tbody id="comparison-body">
+                            <!-- Данные будут добавлены через JavaScript -->
+                        </tbody>
+                    </table>
+                    
+                    <div id="empty-comparison" class="empty-comparison">
+                        <i class="fas fa-balance-scale"></i>
+                        <h3>Нет университетов для сравнения</h3>
+                        <p>Добавьте университеты из каталога для сравнения статистических данных</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+        <footer>
+            <p>© 2023 EduCompare.kz | Сравнение университетов Казахстана | Данные актуальны на 2023 год</p>
+            <p style="margin-top: 10px; font-size: 13px; color: #888;">Информация носит ознакомительный характер. Для точных данных обратитесь к официальным источникам университетов.</p>
+        </footer>
+    </div>
+    
+    <script>
+        // Данные университетов
+        const universities = {
+            'knu': {
+                name: 'КазНУ им. аль-Фараби',
+                fullName: 'Казахский национальный университет имени аль-Фараби',
+                applicants: '8,500',
+                grants: '1,250',
+                cost: '1.8 млн ₸',
+                faculties: '16',
+                studentsPerStream: '350',
+                dormitoryArea: '45,000 м²',
+                qsRanking: '44'
+            },
+            'satbayev': {
+                name: 'Satbayev University',
+                fullName: 'Satbayev University',
+                applicants: '4,200',
+                grants: '850',
+                cost: '2.1 млн ₸',
+                faculties: '9',
+                studentsPerStream: '220',
+                dormitoryArea: '28,500 м²',
+                qsRanking: '251-260'
+            }
+        };
+        
+        // Массив для хранения выбранных университетов
+        let selectedUniversities = [];
+        
+        // Функция добавления университета к сравнению
+        function addToComparison(universityId) {
+            const university = universities[universityId];
+            const card = document.getElementById(`${universityId}-card`);
+            const button = card.querySelector('.add-to-compare');
+            
+            // Проверяем, не добавлен ли уже университет
+            if (selectedUniversities.includes(universityId)) {
+                return; // Университет уже добавлен
+            }
+            
+            // Проверяем, не превышен ли лимит (максимум 2 университета)
+            if (selectedUniversities.length >= 2) {
+                alert('Можно сравнить не более 2 университетов одновременно. Удалите один из добавленных, чтобы добавить новый.');
+                return;
+            }
+            
+            // Добавляем университет в список выбранных
+            selectedUniversities.push(universityId);
+            
+            // Обновляем кнопку
+            button.textContent = 'Добавлено';
+            button.classList.add('added');
+            card.classList.add('selected');
+            
+            // Обновляем панель сравнения
+            updateComparisonTable();
+        }
+        
+        // Функция удаления университета из сравнения
+        function removeFromComparison(universityId) {
+            // Удаляем университет из списка выбранных
+            selectedUniversities = selectedUniversities.filter(id => id !== universityId);
+            
+            // Обновляем кнопку и карточку
+            const card = document.getElementById(`${universityId}-card`);
+            const button = card.querySelector('.add-to-compare');
+            button.textContent = 'Добавить к сравнению';
+            button.classList.remove('added');
+            card.classList.remove('selected');
+            
+            // Обновляем панель сравнения
+            updateComparisonTable();
+        }
+        
+        // Функция обновления таблицы сравнения
+        function updateComparisonTable() {
+            const comparisonBody = document.getElementById('comparison-body');
+            const emptyComparison = document.getElementById('empty-comparison');
+            const comparisonTable = document.getElementById('comparison-table');
+            const uni1Header = document.getElementById('uni1-header');
+            const uni2Header = document.getElementById('uni2-header');
+            
+            // Очищаем таблицу
+            comparisonBody.innerHTML = '';
+            
+            // Если нет выбранных университетов, показываем сообщение
+            if (selectedUniversities.length === 0) {
+                comparisonTable.style.display = 'none';
+                emptyComparison.style.display = 'block';
+                return;
+            }
+            
+            // Скрываем сообщение и показываем таблицу
+            emptyComparison.style.display = 'none';
+            comparisonTable.style.display = 'table';
+            
+            // Обновляем заголовки таблицы
+            if (selectedUniversities.length >= 1) {
+                const uni1 = universities[selectedUniversities[0]];
+                uni1Header.innerHTML = `${uni1.name} <button class="remove-btn" onclick="removeFromComparison('${selectedUniversities[0]}')">Удалить</button>`;
+            } else {
+                uni1Header.textContent = 'Университет 1';
+            }
+            
+            if (selectedUniversities.length >= 2) {
+                const uni2 = universities[selectedUniversities[1]];
+                uni2Header.innerHTML = `${uni2.name} <button class="remove-btn" onclick="removeFromComparison('${selectedUniversities[1]}')">Удалить</button>`;
+            } else {
+                uni2Header.textContent = 'Университет 2';
+            }
+            
+            // Массив строк для сравнения
+            const comparisonRows = [
+                { label: 'Среднее число поступающих абитуриентов', key: 'applicants' },
+                { label: 'Число разыгрываемых грантов', key: 'grants' },
+                { label: 'Полная стоимость обучения (в год)', key: 'cost' },
+                { label: 'Количество факультетов', key: 'faculties' },
+                { label: 'Количество студентов в потоке', key: 'studentsPerStream' },
+                { label: 'Площадь общежития', key: 'dormitoryArea' },
+                { label: 'Позиция в рейтинге QS Asia', key: 'qsRanking' }
+            ];
+            
+            // Заполняем таблицу данными
+            comparisonRows.forEach(row => {
+                const tr = document.createElement('tr');
+                
+                // Столбец с названием параметра
+                const tdLabel = document.createElement('td');
+                tdLabel.textContent = row.label;
+                tdLabel.style.fontWeight = '600';
+                tr.appendChild(tdLabel);
+                
+                // Данные для первого университета
+                const tdUni1 = document.createElement('td');
+                if (selectedUniversities.length >= 1) {
+                    tdUni1.textContent = universities[selectedUniversities[0]][row.key];
+                } else {
+                    tdUni1.textContent = '-';
+                }
+                tr.appendChild(tdUni1);
+                
+                // Данные для второго университета
+                const tdUni2 = document.createElement('td');
+                if (selectedUniversities.length >= 2) {
+                    tdUni2.textContent = universities[selectedUniversities[1]][row.key];
+                } else {
+                    tdUni2.textContent = '-';
+                }
+                tr.appendChild(tdUni2);
+                
+                comparisonBody.appendChild(tr);
+            });
+        }
+        
+        // Инициализация при загрузке страницы
+        document.addEventListener('DOMContentLoaded', function() {
+            updateComparisonTable();
+        });
+    </script>
+</body>
+</html>
