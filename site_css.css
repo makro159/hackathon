@@ -574,3 +574,431 @@ footer {
         justify-content: flex-start;
     }
 }
+    /* ... предыдущие стили остаются без изменений ... */
+
+    /* Стили для страницы 3: ИИ Профориентация */
+    .chat-container {
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+        overflow: hidden;
+    }
+
+    .chat-header {
+        background: linear-gradient(135deg, #0032a0 0%, #0069d9 100%);
+        color: white;
+        padding: 25px;
+    }
+
+    .chat-header h2 {
+        font-size: 24px;
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .chat-subtitle {
+        opacity: 0.9;
+        font-size: 16px;
+    }
+
+    .chat-wrapper {
+        display: flex;
+        flex-direction: column;
+        height: 600px;
+    }
+
+    .chat-messages {
+        flex: 1;
+        overflow-y: auto;
+        padding: 20px;
+        background: #f8fafd;
+    }
+
+    .message {
+        margin-bottom: 20px;
+        max-width: 80%;
+    }
+
+    .bot-message {
+        margin-right: auto;
+    }
+
+    .user-message {
+        margin-left: auto;
+    }
+
+    .message-content {
+        background: white;
+        padding: 15px;
+        border-radius: 12px;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    }
+
+    .bot-message .message-content {
+        border-left: 4px solid #0069d9;
+    }
+
+    .user-message .message-content {
+        border-left: 4px solid #28a745;
+        background: #e8f5e9;
+    }
+
+    .message-sender {
+        font-weight: 600;
+        color: #0032a0;
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .user-message .message-sender {
+        color: #155724;
+    }
+
+    .message-text {
+        margin-bottom: 10px;
+        line-height: 1.5;
+    }
+
+    .message-actions {
+        display: flex;
+        gap: 10px;
+        margin-top: 15px;
+        flex-wrap: wrap;
+    }
+
+    .action-btn {
+        padding: 10px 15px;
+        background: #0069d9;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-weight: 600;
+        transition: all 0.3s;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .action-btn:hover {
+        background: #0050b3;
+        transform: translateY(-2px);
+    }
+
+    .action-btn.info-btn {
+        background: #6c757d;
+    }
+
+    .action-btn.info-btn:hover {
+        background: #5a6268;
+    }
+
+    .chat-input-area {
+        padding: 20px;
+        border-top: 1px solid #e0e6ef;
+        background: white;
+    }
+
+    .test-progress {
+        margin-bottom: 20px;
+    }
+
+    .progress-bar {
+        height: 8px;
+        background: #e9ecef;
+        border-radius: 4px;
+        overflow: hidden;
+        margin-bottom: 8px;
+    }
+
+    .progress-fill {
+        height: 100%;
+        background: linear-gradient(90deg, #28a745, #0069d9);
+        border-radius: 4px;
+        width: 0%;
+        transition: width 0.5s ease;
+    }
+
+    .progress-text {
+        text-align: center;
+        font-weight: 600;
+        color: #0032a0;
+        font-size: 14px;
+    }
+
+    .test-questions {
+        margin-bottom: 20px;
+    }
+
+    .question-item {
+        background: #f8fafd;
+        padding: 15px;
+        border-radius: 8px;
+        margin-bottom: 10px;
+        border-left: 3px solid #0069d9;
+    }
+
+    .question-text {
+        font-weight: 600;
+        margin-bottom: 15px;
+        color: #0032a0;
+    }
+
+    .answer-options {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .answer-option {
+        padding: 12px 15px;
+        background: white;
+        border: 2px solid #e0e6ef;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: all 0.3s;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .answer-option:hover {
+        background: #eef7ff;
+        border-color: #0069d9;
+    }
+
+    .answer-option.selected {
+        background: #e8f5e9;
+        border-color: #28a745;
+        color: #155724;
+        font-weight: 600;
+    }
+
+    .user-input {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 15px;
+    }
+
+    .user-input input {
+        flex: 1;
+        padding: 12px 15px;
+        border: 2px solid #e0e6ef;
+        border-radius: 8px;
+        font-size: 16px;
+        transition: border-color 0.3s;
+    }
+
+    .user-input input:focus {
+        outline: none;
+        border-color: #0069d9;
+    }
+
+    .user-input button {
+        padding: 0 20px;
+        background: #0069d9;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 18px;
+        transition: background 0.3s;
+    }
+
+    .user-input button:hover {
+        background: #0050b3;
+    }
+
+    .quick-actions {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .quick-action {
+        padding: 10px 15px;
+        background: #eef7ff;
+        border: 1px solid #cce5ff;
+        border-radius: 6px;
+        cursor: pointer;
+        font-weight: 600;
+        color: #0069d9;
+        transition: all 0.3s;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 14px;
+    }
+
+    .quick-action:hover {
+        background: #dbeafe;
+        transform: translateY(-2px);
+    }
+
+    .quick-action:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+        transform: none;
+    }
+
+    .test-results {
+        padding: 25px;
+        background: white;
+        border-top: 1px solid #e0e6ef;
+    }
+
+    .results-header {
+        font-size: 22px;
+        color: #0032a0;
+        margin-bottom: 20px;
+        padding-bottom: 12px;
+        border-bottom: 2px solid #eef2f7;
+    }
+
+    .result-category {
+        margin-bottom: 25px;
+    }
+
+    .result-category h3 {
+        font-size: 18px;
+        color: #0032a0;
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .recommendation-card {
+        background: #f8fafd;
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        border-left: 4px solid #28a745;
+    }
+
+    .recommendation-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    .recommendation-title {
+        font-size: 18px;
+        font-weight: 700;
+        color: #0032a0;
+    }
+
+    .recommendation-match {
+        background: #28a745;
+        color: white;
+        padding: 5px 12px;
+        border-radius: 20px;
+        font-weight: 700;
+        font-size: 14px;
+    }
+
+    .recommendation-details {
+        margin-bottom: 15px;
+    }
+
+    .detail-item {
+        display: flex;
+        margin-bottom: 8px;
+    }
+
+    .detail-label {
+        font-weight: 600;
+        color: #666;
+        min-width: 150px;
+    }
+
+    .detail-value {
+        color: #333;
+    }
+
+    .actions {
+        display: flex;
+        gap: 10px;
+        margin-top: 15px;
+    }
+
+    .action-btn.small {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    .personality-traits {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .trait-tag {
+        background: #eef7ff;
+        padding: 8px 15px;
+        border-radius: 20px;
+        font-weight: 600;
+        color: #0069d9;
+        border: 1px solid #cce5ff;
+    }
+
+    .trait-tag.highlight {
+        background: #e8f5e9;
+        color: #155724;
+        border-color: #28a745;
+    }
+
+    .no-results {
+        text-align: center;
+        padding: 40px 20px;
+        color: #666;
+    }
+
+    .no-results i {
+        font-size: 48px;
+        margin-bottom: 15px;
+        color: #ccc;
+    }
+
+    /* Адаптивность для чата */
+    @media (max-width: 768px) {
+        .chat-wrapper {
+            height: 500px;
+        }
+        
+        .message {
+            max-width: 90%;
+        }
+        
+        .message-actions {
+            flex-direction: column;
+        }
+        
+        .quick-actions {
+            flex-direction: column;
+        }
+        
+        .answer-options {
+            flex-direction: column;
+        }
+        
+        .recommendation-header {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+        }
+        
+        .detail-item {
+            flex-direction: column;
+        }
+        
+        .detail-label {
+            min-width: auto;
+            margin-bottom: 5px;
+        }
+    }

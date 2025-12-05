@@ -110,7 +110,7 @@ const universities = {
         studentsPerStream: 200,
         dormitoryArea: 25000,
         qsRanking: 149,
-        image: 'https://kaznaru.edu.kz/wp-content/uploads/2020/09/IMG_20200917_162952-scaled.jpg',
+        image: 'https://nasec.kz/sites/default/files/styles/hero_slider/public/2020-10/%D0%9A%D0%B0%D0%B7%D0%9D%D0%90%D0%A311_2.jpg?itok=1N8RJajs',
         description: 'КазНАИУ - ведущий аграрный университет Казахстана, основанный в 1929 году. Специализируется на подготовке специалистов для сельского хозяйства.',
         year: 1929,
         location: 'Алматы, пр. Абая, 8',
@@ -130,7 +130,7 @@ const universities = {
         studentsPerStream: 180,
         dormitoryArea: 22000,
         qsRanking: 230,
-        image: 'https://kbtu.edu.kz/images/News/DJI_0034-min.jpg',
+        image: 'https://kbtu.edu.kz/images/kbtu_front_build.jpg',
         description: 'КБТУ - престижный технический университет с британскими образовательными стандартами. Основан в 2001 году.',
         year: 2001,
         location: 'Алматы, ул. Толе би, 59',
@@ -150,7 +150,7 @@ const universities = {
         studentsPerStream: 150,
         dormitoryArea: 18000,
         qsRanking: 269,
-        image: 'https://kimep.kz/static/main_site/images/new_design/logo.png',
+        image: 'https://weproject.media/upload/medialibrary/a0b/a0b002d8345e5dc6d1745a35764dd30a.jpg',
         description: 'КИМЭП - первый частный университет в Казахстане, основанный в 1992 году. Специализируется на бизнес-образовании и экономике.',
         year: 1992,
         location: 'Алматы, ул. Абая, 4',
@@ -170,7 +170,7 @@ const universities = {
         studentsPerStream: 240,
         dormitoryArea: 30000,
         qsRanking: 305,
-        image: 'https://ablaikhan.kz/upload/resize_cache/iblock/f00/960_540_2/f0015fd8f3eefb12d9e2b96b27bdb8c4.jpg',
+        image: 'https://studlife.kz/uploads/images/00/02/48/2015/02/16/0u1988ab1f-55fd5c28-55161c82.jpg',
         description: 'КазУМОиМЯ - ведущий университет в области международных отношений и языкового образования в Казахстане.',
         year: 1941,
         location: 'Алматы, ул. Муратбаева, 200',
@@ -190,7 +190,7 @@ const universities = {
         studentsPerStream: 190,
         dormitoryArea: 21000,
         qsRanking: 345,
-        image: 'https://narxoz.kz/storage/app/uploads/public/60e/985/1b2/60e9851b2981b661929399.png',
+        image: 'https://backend.narxozedu.kz/uploads/February2025/003cdf57-b459-4cfc-a92c-9065541fbf07.webp',
         description: 'Narxoz University - ведущий экономический университет Казахстана, специализирующийся на бизнесе и финансах.',
         year: 1963,
         location: 'Алматы, ул. Жандосова, 55',
@@ -210,7 +210,7 @@ const universities = {
         studentsPerStream: 170,
         dormitoryArea: 23000,
         qsRanking: 345,
-        image: 'https://kaznmu.kz/kz/wp-content/uploads/2016/08/728x410-kaznmu.jpg',
+        image: 'https://www.gov.kz/uploads/2023/8/17/3390a259aa4f1c0e01bf2aefcf69c1ba_original.684761.jpg',
         description: 'КазНМУ - ведущий медицинский университет Казахстана, готовящий врачей и медицинских специалистов.',
         year: 1931,
         location: 'Алматы, ул. Толе би, 94',
@@ -230,7 +230,7 @@ const universities = {
         studentsPerStream: 160,
         dormitoryArea: 19000,
         qsRanking: 354,
-        image: 'https://atu.edu.kz/wp-content/uploads/2020/07/DSC_9491-1-scaled.jpg',
+        image: 'https://atu.edu.kz/templates/release/images/bg/bg-index-top.webp',
         description: 'АТУ - университет, специализирующийся на технологических и инженерных специальностях.',
         year: 1957,
         location: 'Алматы, ул. Толе би, 100',
@@ -250,7 +250,7 @@ const universities = {
         studentsPerStream: 140,
         dormitoryArea: 15000,
         qsRanking: 775,
-        image: 'https://iitu.edu.kz/static/main_site/images/logo.png',
+        image: 'https://vecher.kz/uploads/images/2022/08/image_750x_62f348dc73cca.jpg',
         description: 'МУИТ - специализированный университет в области информационных технологий и компьютерных наук.',
         year: 2009,
         location: 'Алматы, ул. Манаса, 34/1',
@@ -270,7 +270,7 @@ const universities = {
         studentsPerStream: 155,
         dormitoryArea: 17000,
         qsRanking: 775,
-        image: 'https://turan-edu.kz/static/main_site/images/new_design/logo.png',
+        image: 'https://images.gostudy.cz/images/2024/07/turan-university2.jpg',
         description: 'Университет «Туран» - многопрофильный университет с акцентом на гуманитарные и социальные науки.',
         year: 1992,
         location: 'Алматы, ул. Сатпаева, 16',
@@ -290,7 +290,7 @@ const universities = {
         studentsPerStream: 130,
         dormitoryArea: 14000,
         qsRanking: 825,
-        image: 'https://kazwpu.edu.kz/wp-content/uploads/2021/09/IMG_20210906_132051-scaled.jpg',
+        image: 'https://avatars.mds.yandex.net/get-altay/1777247/2a0000016b88a13990a0d1b6818def12b2db/L_height',
         description: 'КазНЖПУ - единственный женский педагогический университет в Казахстане, готовящий педагогов-женщин.',
         year: 1944,
         location: 'Алматы, ул. Гоголя, 114',
@@ -834,6 +834,810 @@ function setupNavigation() {
     });
 }
 
+// ... предыдущий код остается без изменений до конца файла ...
+
+// === ИИ ЧАТ-БОТ ДЛЯ ПРОФОРИЕНТАЦИИ ===
+
+// Вопросы для профориентационного теста
+const careerTestQuestions = [
+    {
+        id: 1,
+        question: "Какой тип деятельности вам больше нравится?",
+        options: [
+            { text: "Работа с людьми (обучение, консультирование, помощь)", category: "social", score: 5 },
+            { text: "Аналитическая работа (исследования, анализ данных)", category: "investigative", score: 5 },
+            { text: "Творческая деятельность (искусство, дизайн, писательство)", category: "artistic", score: 5 },
+            { text: "Практическая работа (техника, строительство, производство)", category: "realistic", score: 5 },
+            { text: "Организационная работа (управление, планирование, бизнес)", category: "enterprising", score: 5 },
+            { text: "Систематическая работа (документы, учет, процедуры)", category: "conventional", score: 5 }
+        ]
+    },
+    {
+        id: 2,
+        question: "Какие школьные предметы вам наиболее интересны?",
+        options: [
+            { text: "Математика и физика", category: "investigative", score: 4 },
+            { text: "Химия и биология", category: "investigative", score: 4 },
+            { text: "История и обществознание", category: "social", score: 4 },
+            { text: "Литература и языки", category: "artistic", score: 4 },
+            { text: "Информатика и технологии", category: "realistic", score: 4 },
+            { text: "Экономика и право", category: "enterprising", score: 4 }
+        ]
+    },
+    {
+        id: 3,
+        question: "Как вы предпочитаете решать проблемы?",
+        options: [
+            { text: "Анализирую данные и ищу логическое решение", category: "investigative", score: 3 },
+            { text: "Обсуждаю с другими и учитываю их мнение", category: "social", score: 3 },
+            { text: "Ищу творческий, нестандартный подход", category: "artistic", score: 3 },
+            { text: "Разрабатываю четкий план и следую ему", category: "conventional", score: 3 },
+            { text: "Принимаю быстрое решение и действую", category: "enterprising", score: 3 },
+            { text: "Экспериментирую и пробую разные варианты", category: "realistic", score: 3 }
+        ]
+    },
+    {
+        id: 4,
+        question: "Какая рабочая обстановка вам комфортна?",
+        options: [
+            { text: "Динамичная, с частым общением с людьми", category: "social", score: 3 },
+            { text: "Спокойная, с возможностью сосредоточиться", category: "investigative", score: 3 },
+            { text: "Свободная, творческая атмосфера", category: "artistic", score: 3 },
+            { text: "Четко организованная, предсказуемая", category: "conventional", score: 3 },
+            { text: "Конкурентная, с возможностью роста", category: "enterprising", score: 3 },
+            { text: "Практическая, с работой руками", category: "realistic", score: 3 }
+        ]
+    },
+    {
+        id: 5,
+        question: "Что для вас важно в будущей профессии?",
+        options: [
+            { text: "Возможность помогать другим", category: "social", score: 4 },
+            { text: "Интеллектуальный вызов и развитие", category: "investigative", score: 4 },
+            { text: "Творческая самореализация", category: "artistic", score: 4 },
+            { text: "Стабильность и надежность", category: "conventional", score: 4 },
+            { text: "Высокий доход и карьерный рост", category: "enterprising", score: 4 },
+            { text: "Практические результаты работы", category: "realistic", score: 4 }
+        ]
+    },
+    {
+        id: 6,
+        question: "Какой тип задач вам интереснее?",
+        options: [
+            { text: "Работа с техникой и оборудованием", category: "realistic", score: 3 },
+            { text: "Исследование и открытие нового", category: "investigative", score: 3 },
+            { text: "Создание художественных произведений", category: "artistic", score: 3 },
+            { text: "Обучение и консультирование людей", category: "social", score: 3 },
+            { text: "Организация процессов и людей", category: "enterprising", score: 3 },
+            { text: "Работа с цифрами и документами", category: "conventional", score: 3 }
+        ]
+    },
+    {
+        id: 7,
+        question: "Какими навыками вы обладаете?",
+        options: [
+            { text: "Хорошие коммуникативные навыки", category: "social", score: 2 },
+            { text: "Аналитическое мышление", category: "investigative", score: 2 },
+            { text: "Творческие способности", category: "artistic", score: 2 },
+            { text: "Организаторские способности", category: "enterprising", score: 2 },
+            { text: "Технические навыки", category: "realistic", score: 2 },
+            { text: "Внимательность к деталям", category: "conventional", score: 2 }
+        ]
+    },
+    {
+        id: 8,
+        question: "Как вы видите свою карьеру через 10 лет?",
+        options: [
+            { text: "Эксперт в своей области", category: "investigative", score: 5 },
+            { text: "Руководитель отдела или компании", category: "enterprising", score: 5 },
+            { text: "Помощник или консультант для многих людей", category: "social", score: 5 },
+            { text: "Свободный художник или творческий профессионал", category: "artistic", score: 5 },
+            { text: "Специалист с устойчивым положением", category: "conventional", score: 5 },
+            { text: "Мастер своего дела с практическими навыками", category: "realistic", score: 5 }
+        ]
+    },
+    {
+        id: 9,
+        question: "Какие внеучебные занятия вам интересны?",
+        options: [
+            { text: "Волонтерство и общественная деятельность", category: "social", score: 2 },
+            { text: "Научные кружки и исследования", category: "investigative", score: 2 },
+            { text: "Творческие кружки (рисование, музыка, театр)", category: "artistic", score: 2 },
+            { text: "Технические кружки и моделирование", category: "realistic", score: 2 },
+            { text: "Бизнес-проекты и предпринимательство", category: "enterprising", score: 2 },
+            { text: "Шахматы, головоломки, стратегические игры", category: "conventional", score: 2 }
+        ]
+    },
+    {
+        id: 10,
+        question: "Какой стиль работы вам ближе?",
+        options: [
+            { text: "Самостоятельная, индивидуальная работа", category: "investigative", score: 3 },
+            { text: "Работа в команде, коллективные проекты", category: "social", score: 3 },
+            { text: "Проектная работа с творческой свободой", category: "artistic", score: 3 },
+            { text: "Четко структурированная, по инструкциям", category: "conventional", score: 3 },
+            { text: "Лидерская позиция с принятием решений", category: "enterprising", score: 3 },
+            { text: "Практическая работа с конкретным результатом", category: "realistic", score: 3 }
+        ]
+    }
+];
+
+// Карта специальностей по категориям
+const specialtyCategories = {
+    "social": {
+        name: "Социальная сфера",
+        description: "Работа с людьми, помощь, обучение, консультирование",
+        specialties: ["Педагогика", "Психология", "Социальная работа", "Медицина", "Журналистика"],
+        universities: ["abai", "women", "medical", "abulai", "turan"]
+    },
+    "investigative": {
+        name: "Исследовательская сфера",
+        description: "Научная работа, анализ, исследования, разработки",
+        specialties: ["Компьютерные науки", "Математика", "Физика", "Химия", "Биология", "Инженерия"],
+        universities: ["knu", "satbayev", "kbtu", "iitu", "medical"]
+    },
+    "artistic": {
+        name: "Творческая сфера",
+        description: "Искусство, дизайн, творчество, самовыражение",
+        specialties: ["Дизайн", "Архитектура", "Искусство", "Литература", "Музыка", "Актерское мастерство"],
+        universities: ["atu", "turan", "abai", "knu"]
+    },
+    "realistic": {
+        name: "Практическая сфера",
+        description: "Технические навыки, работа с оборудованием, строительство",
+        specialties: ["Инженерия", "Строительство", "Технологии", "Автомеханика", "Электротехника"],
+        universities: ["satbayev", "kbtu", "atu", "agrar"]
+    },
+    "enterprising": {
+        name: "Предпринимательская сфера",
+        description: "Бизнес, управление, продажи, предпринимательство",
+        specialties: ["Менеджмент", "Экономика", "Финансы", "Маркетинг", "Бизнес-администрирование"],
+        universities: ["kimep", "narxoz", "kbtu", "turan", "knu"]
+    },
+    "conventional": {
+        name: "Организационная сфера",
+        description: "Работа с документами, учет, администрирование, планирование",
+        specialties: ["Бухгалтерия", "Делопроизводство", "Архивирование", "Логистика", "Кадры"],
+        universities: ["narxoz", "kimep", "turan", "knu"]
+    }
+};
+
+// Состояние чат-бота
+let chatbotState = {
+    testStarted: false,
+    currentQuestion: 0,
+    answers: [],
+    testCompleted: false,
+    results: null
+};
+
+// Инициализация чат-бота
+function initializeChatbot() {
+    const chatMessages = document.getElementById('chat-messages');
+    const testQuestions = document.getElementById('test-questions');
+    const progressFill = document.getElementById('progress-fill');
+    const currentQuestionEl = document.getElementById('current-question');
+    const totalQuestionsEl = document.getElementById('total-questions');
+    
+    // Устанавливаем общее количество вопросов
+    totalQuestionsEl.textContent = careerTestQuestions.length;
+    
+    // Настройка кнопок действий
+    document.querySelector('.start-test-btn').addEventListener('click', startTest);
+    document.querySelector('.info-btn').addEventListener('click', showInfo);
+    document.getElementById('restart-test').addEventListener('click', restartTest);
+    document.getElementById('show-results').addEventListener('click', showTestResults);
+    document.getElementById('recommend-universities').addEventListener('click', showRecommendedUniversities);
+    document.getElementById('send-message').addEventListener('click', sendUserMessage);
+    
+    // Настройка отправки сообщения по Enter
+    document.getElementById('user-message').addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+            sendUserMessage();
+        }
+    });
+    
+    // Обновляем состояние кнопок
+    updateChatbotButtons();
+}
+
+// Начать тест
+function startTest() {
+    chatbotState.testStarted = true;
+    chatbotState.currentQuestion = 0;
+    chatbotState.answers = [];
+    chatbotState.testCompleted = false;
+    
+    // Очищаем предыдущие вопросы
+    const testQuestions = document.getElementById('test-questions');
+    testQuestions.innerHTML = '';
+    
+    // Обновляем прогресс
+    updateProgress();
+    
+    // Показываем первый вопрос
+    showCurrentQuestion();
+    
+    // Обновляем состояние кнопок
+    updateChatbotButtons();
+    
+    // Добавляем сообщение в чат
+    addBotMessage("Отлично! Давайте начнем тест. Отвечайте на вопросы честно - это поможет получить наиболее точные рекомендации.");
+}
+
+// Показать информацию о тесте
+function showInfo() {
+    addBotMessage("Я задам вам 10 вопросов о ваших интересах, способностях и предпочтениях. На основе ваших ответов я определю наиболее подходящие для вас профессиональные сферы и порекомендую университеты из нашего каталога, которые предлагают соответствующие специальности.");
+}
+
+// Показать текущий вопрос
+function showCurrentQuestion() {
+    if (!chatbotState.testStarted || chatbotState.currentQuestion >= careerTestQuestions.length) {
+        completeTest();
+        return;
+    }
+    
+    const question = careerTestQuestions[chatbotState.currentQuestion];
+    const testQuestions = document.getElementById('test-questions');
+    
+    // Создаем HTML для вопроса
+    const questionHTML = `
+        <div class="question-item">
+            <div class="question-text">${question.id}. ${question.question}</div>
+            <div class="answer-options">
+                ${question.options.map((option, index) => `
+                    <button class="answer-option" data-index="${index}" data-category="${option.category}" data-score="${option.score}">
+                        ${option.text}
+                    </button>
+                `).join('')}
+            </div>
+        </div>
+    `;
+    
+    testQuestions.innerHTML = questionHTML;
+    
+    // Добавляем обработчики для вариантов ответа
+    document.querySelectorAll('.answer-option').forEach(button => {
+        button.addEventListener('click', function() {
+            // Снимаем выделение с других вариантов
+            document.querySelectorAll('.answer-option').forEach(btn => {
+                btn.classList.remove('selected');
+            });
+            
+            // Выделяем выбранный вариант
+            this.classList.add('selected');
+            
+            // Сохраняем ответ
+            const answer = {
+                questionId: question.id,
+                optionIndex: parseInt(this.getAttribute('data-index')),
+                category: this.getAttribute('data-category'),
+                score: parseInt(this.getAttribute('data-score'))
+            };
+            
+            // Если это новый вопрос, добавляем ответ
+            if (chatbotState.answers.length <= chatbotState.currentQuestion) {
+                chatbotState.answers.push(answer);
+            } else {
+                // Иначе обновляем ответ на текущий вопрос
+                chatbotState.answers[chatbotState.currentQuestion] = answer;
+            }
+            
+            // Через секунду переходим к следующему вопросу
+            setTimeout(() => {
+                chatbotState.currentQuestion++;
+                updateProgress();
+                
+                if (chatbotState.currentQuestion < careerTestQuestions.length) {
+                    showCurrentQuestion();
+                } else {
+                    completeTest();
+                }
+            }, 500);
+        });
+    });
+    
+    // Если на этот вопрос уже был дан ответ, показываем его
+    if (chatbotState.answers[chatbotState.currentQuestion]) {
+        const answer = chatbotState.answers[chatbotState.currentQuestion];
+        const answerButtons = document.querySelectorAll('.answer-option');
+        if (answerButtons[answer.optionIndex]) {
+            answerButtons[answer.optionIndex].classList.add('selected');
+        }
+    }
+    
+    // Обновляем номер текущего вопроса
+    document.getElementById('current-question').textContent = chatbotState.currentQuestion + 1;
+}
+
+// Обновить прогресс теста
+function updateProgress() {
+    const progressFill = document.getElementById('progress-fill');
+    const progressPercentage = (chatbotState.currentQuestion / careerTestQuestions.length) * 100;
+    progressFill.style.width = `${progressPercentage}%`;
+}
+
+// Завершить тест
+function completeTest() {
+    chatbotState.testCompleted = true;
+    chatbotState.results = calculateResults();
+    
+    // Очищаем вопросы
+    document.getElementById('test-questions').innerHTML = '';
+    
+    // Обновляем прогресс на 100%
+    updateProgress();
+    
+    // Добавляем сообщение о завершении
+    addBotMessage("Поздравляю! Вы завершили профориентационный тест. Теперь я проанализирую ваши ответы и подберу для вас наиболее подходящие специальности и университеты.");
+    
+    // Показываем результаты
+    setTimeout(() => {
+        showTestResults();
+    }, 1500);
+    
+    // Обновляем состояние кнопок
+    updateChatbotButtons();
+}
+
+// Рассчитать результаты теста
+function calculateResults() {
+    const scores = {
+        social: 0,
+        investigative: 0,
+        artistic: 0,
+        realistic: 0,
+        enterprising: 0,
+        conventional: 0
+    };
+    
+    // Суммируем баллы по категориям
+    chatbotState.answers.forEach(answer => {
+        if (answer && answer.category && scores.hasOwnProperty(answer.category)) {
+            scores[answer.category] += answer.score;
+        }
+    });
+    
+    // Находим топ-3 категории
+    const sortedCategories = Object.entries(scores)
+        .sort((a, b) => b[1] - a[1])
+        .slice(0, 3);
+    
+    return {
+        scores: scores,
+        topCategories: sortedCategories.map(([category, score]) => ({
+            category,
+            score,
+            ...specialtyCategories[category]
+        })),
+        allCategories: Object.entries(scores).map(([category, score]) => ({
+            category,
+            score,
+            ...specialtyCategories[category]
+        })).sort((a, b) => b.score - a.score)
+    };
+}
+
+// Показать результаты теста
+function showTestResults() {
+    if (!chatbotState.testCompleted || !chatbotState.results) {
+        addBotMessage("Сначала пройдите тест, чтобы увидеть результаты.");
+        return;
+    }
+    
+    const resultsContainer = document.getElementById('test-results');
+    const results = chatbotState.results;
+    
+    let resultsHTML = `
+        <div class="results-header">
+            <i class="fas fa-chart-bar"></i> Результаты профориентационного теста
+        </div>
+        
+        <div class="result-category">
+            <h3><i class="fas fa-star"></i> Ваши ведущие профессиональные сферы</h3>
+    `;
+    
+    // Показываем топ-3 категории
+    results.topCategories.forEach((category, index) => {
+        const rank = index === 0 ? '1-е место' : index === 1 ? '2-е место' : '3-е место';
+        const percentage = Math.round((category.score / 45) * 100); // 45 - максимальный балл
+        
+        resultsHTML += `
+            <div class="recommendation-card">
+                <div class="recommendation-header">
+                    <div class="recommendation-title">${category.name}</div>
+                    <div class="recommendation-match">${rank} (${percentage}%)</div>
+                </div>
+                <div class="recommendation-details">
+                    <div class="detail-item">
+                        <div class="detail-label">Описание:</div>
+                        <div class="detail-value">${category.description}</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Рекомендуемые специальности:</div>
+                        <div class="detail-value">${category.specialties.join(', ')}</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Баллы:</div>
+                        <div class="detail-value">${category.score} из 45</div>
+                    </div>
+                </div>
+                <div class="actions">
+                    <button class="action-btn small" onclick="showUniversitiesForCategory('${category.category}')">
+                        <i class="fas fa-university"></i> Подходящие вузы
+                    </button>
+                </div>
+            </div>
+        `;
+    });
+    
+    // Показываем все черты личности
+    resultsHTML += `
+        </div>
+        
+        <div class="result-category">
+            <h3><i class="fas fa-user-tag"></i> Ваши профессиональные черты</h3>
+            <div class="personality-traits">
+    `;
+    
+    results.allCategories.forEach(category => {
+        const percentage = Math.round((category.score / 45) * 100);
+        const isHighlight = percentage > 50;
+        
+        resultsHTML += `
+            <div class="trait-tag ${isHighlight ? 'highlight' : ''}">
+                ${category.name} (${percentage}%)
+            </div>
+        `;
+    });
+    
+    resultsHTML += `
+            </div>
+        </div>
+        
+        <div class="actions" style="margin-top: 30px;">
+            <button class="action-btn" onclick="generateDetailedReport()">
+                <i class="fas fa-file-pdf"></i> Скачать детальный отчет
+            </button>
+            <button class="action-btn" onclick="showRecommendedUniversities()">
+                <i class="fas fa-university"></i> Все рекомендуемые вузы
+            </button>
+        </div>
+    `;
+    
+    resultsContainer.innerHTML = resultsHTML;
+}
+
+// Показать университеты для категории
+function showUniversitiesForCategory(categoryId) {
+    const category = specialtyCategories[categoryId];
+    if (!category) return;
+    
+    const resultsContainer = document.getElementById('test-results');
+    
+    let universitiesHTML = `
+        <div class="results-header">
+            <i class="fas fa-university"></i> Университеты для сферы "${category.name}"
+        </div>
+        
+        <div class="result-category">
+            <h3><i class="fas fa-graduation-cap"></i> Подходящие университеты</h3>
+    `;
+    
+    // Для каждого университета из категории
+    category.universities.forEach(universityId => {
+        const university = universities[universityId];
+        if (university) {
+            const matchingSpecialties = university.specialties ? 
+                university.specialties.filter(spec => 
+                    category.specialties.some(catSpec => 
+                        spec.toLowerCase().includes(catSpec.toLowerCase().split(' ')[0])
+                    )
+                ) : category.specialties.slice(0, 3);
+            
+            universitiesHTML += `
+                <div class="recommendation-card">
+                    <div class="recommendation-header">
+                        <div class="recommendation-title">${university.name}</div>
+                        <div class="recommendation-match">${matchingSpecialties.length} совпадений</div>
+                    </div>
+                    <div class="recommendation-details">
+                        <div class="detail-item">
+                            <div class="detail-label">Рейтинг QS:</div>
+                            <div class="detail-value">${university.qsRanking <= 800 ? university.qsRanking : '801-850'}</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Стоимость:</div>
+                            <div class="detail-value">${(university.cost / 1000000).toFixed(1)} млн ₸/год</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Подходящие специальности:</div>
+                            <div class="detail-value">${matchingSpecialties.join(', ')}</div>
+                        </div>
+                    </div>
+                    <div class="actions">
+                        <button class="action-btn small" onclick="switchToUniversityDetail('${universityId}')">
+                            <i class="fas fa-info-circle"></i> Подробнее
+                        </button>
+                        <button class="action-btn small" onclick="addToComparisonFromChat('${universityId}')">
+                            <i class="fas fa-balance-scale"></i> Сравнить
+                        </button>
+                    </div>
+                </div>
+            `;
+        }
+    });
+    
+    universitiesHTML += `
+        </div>
+        
+        <div class="actions" style="margin-top: 20px;">
+            <button class="action-btn" onclick="showTestResults()">
+                <i class="fas fa-arrow-left"></i> Вернуться к результатам
+            </button>
+        </div>
+    `;
+    
+    resultsContainer.innerHTML = universitiesHTML;
+}
+
+// Показать все рекомендуемые университеты
+function showRecommendedUniversities() {
+    if (!chatbotState.testCompleted || !chatbotState.results) {
+        addBotMessage("Сначала пройдите тест, чтобы получить рекомендации по университетам.");
+        return;
+    }
+    
+    // Собираем все уникальные университеты из топ-3 категорий
+    const allUniversityIds = new Set();
+    chatbotState.results.topCategories.forEach(category => {
+        specialtyCategories[category.category].universities.forEach(id => {
+            allUniversityIds.add(id);
+        });
+    });
+    
+    const resultsContainer = document.getElementById('test-results');
+    
+    let universitiesHTML = `
+        <div class="results-header">
+            <i class="fas fa-university"></i> Все рекомендуемые университеты
+        </div>
+        
+        <div class="result-category">
+            <h3><i class="fas fa-star"></i> Лучшие варианты для вас</h3>
+            <p>На основе ваших ответов мы подобрали ${allUniversityIds.size} университетов, которые лучше всего соответствуют вашим профессиональным интересам.</p>
+    `;
+    
+    // Сортируем университеты по рейтингу
+    const sortedUniversityIds = Array.from(allUniversityIds).sort((a, b) => {
+        return universities[a].qsRanking - universities[b].qsRanking;
+    });
+    
+    sortedUniversityIds.forEach(universityId => {
+        const university = universities[universityId];
+        
+        // Находим, в каких категориях этот университет рекомендуется
+        const recommendedInCategories = chatbotState.results.topCategories
+            .filter(category => 
+                specialtyCategories[category.category].universities.includes(universityId)
+            )
+            .map(category => category.name);
+        
+        universitiesHTML += `
+            <div class="recommendation-card">
+                <div class="recommendation-header">
+                    <div class="recommendation-title">${university.name}</div>
+                    <div class="recommendation-match">Рекомендован в ${recommendedInCategories.length} сферах</div>
+                </div>
+                <div class="recommendation-details">
+                    <div class="detail-item">
+                        <div class="detail-label">Рейтинг QS Asia:</div>
+                        <div class="detail-value">${university.qsRanking <= 800 ? university.qsRanking : '801-850'}</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Стоимость обучения:</div>
+                        <div class="detail-value">${(university.cost / 1000000).toFixed(1)} млн ₸ в год</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Количество факультетов:</div>
+                        <div class="detail-value">${university.faculties}</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Рекомендован для сфер:</div>
+                        <div class="detail-value">${recommendedInCategories.join(', ')}</div>
+                    </div>
+                </div>
+                <div class="actions">
+                    <button class="action-btn small" onclick="switchToUniversityDetail('${universityId}')">
+                        <i class="fas fa-info-circle"></i> Подробнее
+                    </button>
+                    <button class="action-btn small" onclick="addToComparisonFromChat('${universityId}')">
+                        <i class="fas fa-balance-scale"></i> Сравнить
+                    </button>
+                </div>
+            </div>
+        `;
+    });
+    
+    universitiesHTML += `
+        </div>
+        
+        <div class="actions" style="margin-top: 20px;">
+            <button class="action-btn" onclick="showTestResults()">
+                <i class="fas fa-arrow-left"></i> Вернуться к результатам
+            </button>
+        </div>
+    `;
+    
+    resultsContainer.innerHTML = universitiesHTML;
+}
+
+// Переключиться на детальную информацию об университете
+function switchToUniversityDetail(universityId) {
+    // Переключаемся на вкладку детальной информации
+    document.querySelectorAll('.nav-tab').forEach(tab => tab.classList.remove('active'));
+    document.querySelector('[data-page="page2"]').classList.add('active');
+    
+    document.querySelectorAll('.page').forEach(page => page.classList.remove('active'));
+    document.getElementById('page2').classList.add('active');
+    
+    // Устанавливаем выбранный университет
+    setTimeout(() => {
+        const button = document.querySelector(`.university-select-btn[data-university="${universityId}"]`);
+        if (button) {
+            button.click();
+        }
+    }, 100);
+}
+
+// Добавить университет к сравнению из чата
+function addToComparisonFromChat(universityId) {
+    addToComparison(universityId);
+    
+    // Переключаемся на вкладку сравнения
+    document.querySelectorAll('.nav-tab').forEach(tab => tab.classList.remove('active'));
+    document.querySelector('[data-page="page1"]').classList.add('active');
+    
+    document.querySelectorAll('.page').forEach(page => page.classList.remove('active'));
+    document.getElementById('page1').classList.add('active');
+    
+    // Показываем сообщение
+    setTimeout(() => {
+        const university = universities[universityId];
+        addBotMessage(`Университет "${university.name}" добавлен к сравнению!`);
+    }, 100);
+}
+
+// Генерация детального отчета
+function generateDetailedReport() {
+    if (!chatbotState.testCompleted) {
+        addBotMessage("Сначала пройдите тест, чтобы сгенерировать отчет.");
+        return;
+    }
+    
+    addBotMessage("Генерирую детальный отчет в формате PDF...");
+    
+    // В реальном приложении здесь был бы запрос к серверу для генерации PDF
+    setTimeout(() => {
+        addBotMessage("Отчет успешно сгенерирован! Скачать его можно по <a href='#' onclick='downloadReport()'>этой ссылке</a>.");
+    }, 2000);
+}
+
+// Скачать отчет (заглушка)
+function downloadReport() {
+    alert("В реальном приложении здесь началась бы загрузка PDF-отчета.");
+}
+
+// Перезапустить тест
+function restartTest() {
+    chatbotState.testStarted = false;
+    chatbotState.currentQuestion = 0;
+    chatbotState.answers = [];
+    chatbotState.testCompleted = false;
+    chatbotState.results = null;
+    
+    // Очищаем результаты
+    document.getElementById('test-results').innerHTML = '';
+    document.getElementById('test-questions').innerHTML = '';
+    
+    // Сбрасываем прогресс
+    updateProgress();
+    document.getElementById('current-question').textContent = '0';
+    
+    // Добавляем приветственное сообщение
+    addBotMessage("Тест сброшен. Нажмите 'Начать тест', чтобы пройти профориентацию заново.");
+    
+    // Обновляем состояние кнопок
+    updateChatbotButtons();
+}
+
+// Отправить пользовательское сообщение
+function sendUserMessage() {
+    const input = document.getElementById('user-message');
+    const message = input.value.trim();
+    
+    if (!message) return;
+    
+    // Добавляем сообщение пользователя в чат
+    addUserMessage(message);
+    
+    // Очищаем поле ввода
+    input.value = '';
+    
+    // Обрабатываем сообщение
+    processUserMessage(message.toLowerCase());
+}
+
+// Обработать пользовательское сообщение
+function processUserMessage(message) {
+    setTimeout(() => {
+        if (message.includes('привет') || message.includes('здравствуй')) {
+            addBotMessage("Привет! Я ИИ-помощник ONAY UNIBASE. Чем могу помочь?");
+        } else if (message.includes('тест') || message.includes('профориентация')) {
+            addBotMessage("Хотите пройти профориентационный тест? Он поможет определить подходящие для вас специальности и университеты.");
+        } else if (message.includes('результат') && chatbotState.testCompleted) {
+            showTestResults();
+        } else if (message.includes('университет') || message.includes('вуз')) {
+            addBotMessage("Я могу порекомендовать университеты на основе ваших интересов. Пройдите тест, чтобы получить персонализированные рекомендации.");
+        } else if (message.includes('специальность') || message.includes('факультет')) {
+            addBotMessage("После прохождения теста я подберу для вас подходящие специальности из нашего каталога университетов Казахстана.");
+        } else {
+            addBotMessage("Я понимаю вопросы о профориентации, выборе университета и специальностей. Пройдите тест, чтобы получить конкретные рекомендации!");
+        }
+    }, 1000);
+}
+
+// Добавить сообщение бота
+function addBotMessage(text) {
+    const chatMessages = document.getElementById('chat-messages');
+    const messageDiv = document.createElement('div');
+    messageDiv.className = 'message bot-message';
+    messageDiv.innerHTML = `
+        <div class="message-content">
+            <div class="message-sender">
+                <i class="fas fa-robot"></i> ИИ Помощник
+            </div>
+            <div class="message-text">${text}</div>
+        </div>
+    `;
+    chatMessages.appendChild(messageDiv);
+    chatMessages.scrollTop = chatMessages.scrollHeight;
+}
+
+// Добавить сообщение пользователя
+function addUserMessage(text) {
+    const chatMessages = document.getElementById('chat-messages');
+    const messageDiv = document.createElement('div');
+    messageDiv.className = 'message user-message';
+    messageDiv.innerHTML = `
+        <div class="message-content">
+            <div class="message-sender">
+                <i class="fas fa-user"></i> Вы
+            </div>
+            <div class="message-text">${text}</div>
+        </div>
+    `;
+    chatMessages.appendChild(messageDiv);
+    chatMessages.scrollTop = chatMessages.scrollHeight;
+}
+
+// Обновить состояние кнопок чат-бота
+function updateChatbotButtons() {
+    const restartBtn = document.getElementById('restart-test');
+    const resultsBtn = document.getElementById('show-results');
+    const universitiesBtn = document.getElementById('recommend-universities');
+    
+    if (chatbotState.testCompleted) {
+        restartBtn.disabled = false;
+        resultsBtn.disabled = false;
+        universitiesBtn.disabled = false;
+    } else {
+        resultsBtn.disabled = true;
+        universitiesBtn.disabled = true;
+    }
+}
+
+
 // Инициализация при загрузке страницы
 document.addEventListener('DOMContentLoaded', function() {
     // Отображаем карточки университетов
@@ -851,4 +1655,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Создаем кнопки выбора университетов для страницы 2
     createUniversitySelector();
+
+    initializeChatbot();
 });
+

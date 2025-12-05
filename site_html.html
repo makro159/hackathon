@@ -35,6 +35,9 @@
             <div class="nav-tab" data-page="page2">
                 <i class="fas fa-info-circle"></i> Детальная информация
             </div>
+            <div class="nav-tab" data-page="page3">
+                <i class="fas fa-robot"></i> ИИ Профориентация
+            </div>
         </div>
         
         <!-- Страница 1: Сравнение университетов -->
@@ -98,9 +101,82 @@
             </div>
         </div>
         
+        <!-- Страница 3: ИИ Профориентация -->
+        <div id="page3" class="page">
+            <div class="chat-container">
+                <div class="chat-header">
+                    <h2><i class="fas fa-robot"></i> ИИ Помощник по профориентации</h2>
+                    <p class="chat-subtitle">Пройдите тест и получите рекомендации по выбору университета и специальности</p>
+                </div>
+                
+                <div class="chat-wrapper">
+                    <div class="chat-messages" id="chat-messages">
+                        <div class="message bot-message">
+                            <div class="message-content">
+                                <div class="message-sender">
+                                    <i class="fas fa-robot"></i> ИИ Помощник
+                                </div>
+                                <div class="message-text">
+                                    Привет! Я ИИ-помощник ONAY UNIBASE. Я помогу вам подобрать идеальный университет и специальность на основе ваших интересов, способностей и целей.
+                                </div>
+                                <div class="message-text">
+                                    Пройдем небольшой тест из 10 вопросов? Это займет всего 5-7 минут.
+                                </div>
+                                <div class="message-actions">
+                                    <button class="action-btn start-test-btn">
+                                        <i class="fas fa-play-circle"></i> Начать тест
+                                    </button>
+                                    <button class="action-btn info-btn">
+                                        <i class="fas fa-info-circle"></i> Как это работает?
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="chat-input-area">
+                        <div class="test-progress" id="test-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" id="progress-fill"></div>
+                            </div>
+                            <div class="progress-text">Вопрос <span id="current-question">0</span>/<span id="total-questions">10</span></div>
+                        </div>
+                        
+                        <div class="test-questions" id="test-questions">
+                            <!-- Вопросы будут добавляться динамически -->
+                        </div>
+                        
+                        <div class="user-input">
+                            <input type="text" id="user-message" placeholder="Введите ваш вопрос или ответ...">
+                            <button id="send-message">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                        
+                        <div class="quick-actions">
+                            <button class="quick-action" id="restart-test">
+                                <i class="fas fa-redo"></i> Начать заново
+                            </button>
+                            <button class="quick-action" id="show-results">
+                                <i class="fas fa-chart-bar"></i> Результаты теста
+                            </button>
+                            <button class="quick-action" id="recommend-universities">
+                                <i class="fas fa-university"></i> Рекомендуемые вузы
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="test-results" id="test-results">
+                    <!-- Результаты теста будут отображаться здесь -->
+                </div>
+            </div>
+        </div>
+        
         <footer>
-            <p>© 2023 ONAY UNIBASE | База данных 13 ведущих университетов Казахстана | Данные актуальны на 2023 год</p>
+            <p>© 2025 ONAY UNIBASE | База данных 13 ведущих университетов Казахстана | Данные актуальны на 2025 год</p>
             <p style="margin-top: 10px; font-size: 13px; color: #888;">Информация носит ознакомительный характер. Для точных данных обратитесь к официальным источникам университетов.</p>
+            <p style="margin-top: 10px; font-size: 7px; color: #888;">Этот проект был выполнен при частичной поддержке ИИ</p>
         </footer>
     </div>
     
